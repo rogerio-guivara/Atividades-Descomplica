@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro e Apresentação de Colaboradores</title>
+</head>
+<body>
+    <header><h1>Cadastre-se!</h1></header>
+    <section>
+        <form method="GET" action="">
+            <fieldset>
+                <legend>Novo Colaborador, insira seus dados:</legend>
+                <div>
+                <label>Nome Completo</label>
+                <input type="text" name="nome" required>
+
+                <label>Idade</label>
+                <input type="text" required name="idade" maxlength="2">
+            </fieldset></div><br>
+
+                <fieldset>
+                    <legend>Qual será seu cargo exercido na empresa?</legend>
+                    <label>
+                        <input type="radio" name="cargo" id="Gerente" value="Gerente">Gerente
+                    </label>
+    
+                    <label>
+                        <input type="radio" name="cargo" id="Desenvolvedor" value="Desenvolvedor">Desenvolvedor
+                    </label>
+                </fieldset>
+
+                <script> /*let selectcargo = document.getElementById(if(){
+                    selectcargo.onselect(Gerente)
+                });
+*/
+                </script>
+
+                <fieldset>
+                <legend>Departamento</legend>
+                <input type="text" required name="departamento">
+                </fieldset>
+
+            <fieldset>
+                <legend>Linguagem de Programação</legend>
+                <label>
+                    <input type="checkbox" name="linguagem" value="java">Java
+                </label>
+                <label>
+                    <br><input type="checkbox" name="linguagem" value="python">Python
+                </label>
+                <label>
+                    <br><input type="checkbox" name="linguagem" value="C Sharp">C Sharp
+                </label>
+                <label>
+                    <br><input type="checkbox" name="linguagem" value="visualBasic">Visual visualBasic
+                </label>
+            </fieldset>
+        </fieldset><br>
+
+            <input type="submit" name="novoFuncionario" value="Cadastrar!">
+
+</body>
+</html>
