@@ -10,51 +10,51 @@
     <section>
         <form method="GET" action="">
             <fieldset>
-                <legend>Novo Colaborador, insira seus dados:</legend>
-                <div>
-                <label>Nome Completo</label>
-                <input type="text" name="nome" required>
+                <legend>Colaborador, insira seus dados:</legend>
+                <div class="mb-3">
+                <label class="form-label" for="nome">Nome Completo</label>
+                <input type="text" class="form-control" name="nome" id="nome" required>
 
-                <label>Idade</label>
-                <input type="text" required name="idade" maxlength="2">
-            </fieldset></div><br>
+                <label class="form-label" for="idade">Idade</label>
+                <input type="text" class="form-control" required name="idade" id="idade" maxlength="2">
+            </div></fieldset><br>
 
                 <fieldset>
                     <legend>Qual será seu cargo exercido na empresa?</legend>
-                    <label>
-                        <input type="radio" name="cargo" id="Gerente" value="Gerente">Gerente
-                    </label>
-    
-                    <label>
-                        <input type="radio" name="cargo" id="Desenvolvedor" value="Desenvolvedor">Desenvolvedor
-                    </label>
-                </fieldset>
+                    <div class="mb-3">
+                    <input type="radio" name="cargo" id="Gerente" value="Gerente">
+                    <label class="form-label" for="Gerente"></label>Gerente
 
-                <script> /*let selectcargo = document.getElementById(if(){
-                    selectcargo.onselect(Gerente)
-                });
-*/
-                </script>
+                    
+                    <input type="radio" name="cargo" id="Desenvolvedor" value="Desenvolvedor">
+                    <label class="form-label" for="Desenvolvedor"></label>Desenvolvedor
+                    </div> 
+                </fieldset><br>
 
                 <fieldset>
                 <legend>Departamento</legend>
-                <input type="text" required name="departamento">
+                <input type="text" name="departamento" id="campoDepartamento">
                 </fieldset>
 
             <fieldset>
                 <legend>Linguagem de Programação</legend>
-                <label>
-                    <input type="checkbox" name="linguagem" value="java">Java
-                </label>
-                <label>
-                    <br><input type="checkbox" name="linguagem" value="python">Python
-                </label>
-                <label>
-                    <br><input type="checkbox" name="linguagem" value="C Sharp">C Sharp
-                </label>
-                <label>
-                    <br><input type="checkbox" name="linguagem" value="visualBasic">Visual visualBasic
-                </label>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="linguagem" id="linguagem" value="java">
+                    <label class="form-check-label" for="linguagem">
+                        Java
+                    </label>
+                    <input type="checkbox" class="form-check-input" name="linguagem" id="linguagem" value="python">
+                    <label class="form-check-label" for="linguagem">
+                        Python
+                    </label>
+                    <input type="checkbox" class="form-check-input" name="linguagem" id="linguagem" value="cSharp">
+                    <label class="form-check-label" for="linguagem">
+                        C Sharp
+                    </label>
+                    <input type="checkbox" class="form-check-input" name="linguagem" id="linguagem" value="visualBasic">
+                    <label class="form-check-label" for="linguagem">
+                        Visual Basic
+                    </label>            
             </fieldset>
         </fieldset><br>
 
