@@ -1,43 +1,132 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reserva de Viagem</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
-    <header>
+    <header class="container-fluid p-2 bg-warning text-center">
+        <nav class="navbar navbar-expand-lg bg-warning">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Viagem dos Sonhos!</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Pacotes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Taxas</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Contato
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
         <h1>Venha reservar a viagem dos seus sonhos!</h1>
+        <p>
+            Sed condimentum diam orci, eget condimentum ipsum convallis quis. Sed ut perspiciatis, unde omnis iste natus
+            error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore
+        </p>
     </header>
-    <section>
+    <section class="container-fluid p-2 bg-white text-center">
+        <h2>Venha conhecer nossos Pacotes!</h2>
+        <p> veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas
+            sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi
+            nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit amet consectetur adipiscing velit, sed
+            quia non numquam do eius modi tempora inci[di]dunt, ut labore et dolore magnam aliquam quaerat voluptatem.
+            Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
+            ea commodi consequatur?
+            Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+            aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+            Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni
+            dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor
+            sit amet consectetur adipiscing velit, sed quia non numquam do eius modi tempora inci[di]dunt, ut labore et
+            dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam
+            corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure
+            reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum
+            fugiat, quo voluptas nulla pariatur?
+        </p>
+    </section>
+
+    <section class="container-fluid p-2 bg-#f4f4f4 text-center">
+
+
+        <h2>Taxa de Serviços</h2>
+        
+        <table class="table table-warning table-striped table-hover table-bordered border-warning">
+            <caption> Descrição dos serviços e respectivos valores</caption>
+            <thead class="table-secondary">
+                <tr>
+                    <th>Serviços</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                <tr>
+                    <td>Reserva de hotel</td>
+                    <td>R$500,00</td>
+                </tr>
+                <tr>
+                    <td>Aluguel de Carro</td>
+                    <td>R$300,00</td>
+                </tr>
+            </tbody>
+        </table>
+
         <h2> Cadastro para Orçamento</h2>
         <form method="GET" action="">
             <fieldset>
                 <legend>Dados do Passageiro</legend>
-                <label>Nome</label><br>
-                <input type="text" name="nome"><br><br>
+                <label style="padding: 15px;">Nome</label>
+                <input type="text" name="nome">
 
-                <label>E-mail</label><br>
-                <input type="email" required name="email"><br><br>
+                <label style="padding: 0px, 0px, 0px, 25px;">E-mail</label>
+                <input type="email" required name="email">
             </fieldset>
 
             <fieldset>
                 <legend>Serviços a contratar</legend>
                 <label>
-                    <br><input type="checkbox" name="passagens" value="Passagens">Compra de passagens
-                </label>
+                    <input type="checkbox" name="passagens" value="Passagens">Compra de passagens
+                </label><br>
                 <label>
-                    <br><input type="checkbox" name="hospedagem" value="Hospedagem">Reserva de Hotéis
-                </label>
+                    <input type="checkbox" name="hospedagem" value="Hospedagem">Reserva de Hotéis
+                </label><br>
                 <label>
-                    <br><input type="checkbox" name="veiculos" value="Veículo">Aluguel de Veículos
+                    <input type="checkbox" name="veiculos" value="Veículo">Aluguel de Veículos
                 </label>
             </fieldset>
 
             <fieldset>
                 <legend>Escolha a forma de pagamento</legend>
                 <label>
-                    <br><input type="radio" name="formaPagamento" value="Cartão de Crédito">Cartão de Crédito
+                    <input type="radio" name="formaPagamento" value="Cartão de Crédito">Cartão de Crédito
                 </label>
 
                 <label>
@@ -63,8 +152,16 @@
 
 
     </section>
-    <section>        
-        <footer> <p> Desenvolvido por Rogério Guivara</p></footer>
+    <section>
+        <footer>
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2020 Copyright:
+                <a class="text-black" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+              </div>
+        </footer>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 </body>
 </html>
